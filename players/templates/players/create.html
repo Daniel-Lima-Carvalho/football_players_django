@@ -1,3 +1,6 @@
+{% extends 'players/base.html' %}
+
+{% block content %}
 <form action="/action_page.php">
     <label>Name:</label><br>
     <input type="text"><br>
@@ -5,3 +8,4 @@
     <input type="text"><br>
     <input type="submit" value="Create Player">
 </form> 
+{% endblock %}
