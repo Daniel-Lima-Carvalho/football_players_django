@@ -7,8 +7,6 @@ def index(request):
     context = {
         'players': Player.objects.all()
     }
-     #'players': [{'name': 'Daniel','team': 'Flamengo','position': 'Midfielder'},{'name': 'Daniel 2','team': 'Flamengo','position': 'Midfielder'}]
-
     return render(request, 'players/index.html', context)
 
 def create(request):
