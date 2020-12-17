@@ -1,5 +1,44 @@
-{% if player %}
-    <p>{{ player }}</p>
-{% else %}
-    <p>No players are available.</p>
-{% endif %}
+{% extends 'players/base.html' %}
+{% load static %}
+{% block content %}
+<div class="row justify-content-md-center">
+  <div class="col-sm-6 text-center">
+      <h3 class="h3">Players List</h3>
+  </div>
+</div>
+<br>
+<div class="row justify-content-sm-center">
+  <div class="col-sm">
+    {% if players %}
+    <table class="table table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <tr>
+            <th scope="col">Picture</th>
+            <th scope="col">Name</th>
+            <th scope="col">Team</th>
+            <th scope="col">Position</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </tr>
+      </thead>
+      <tbody>
+        {% for player in players%}
+        <tr>
+            <td><img class="player-picture" src="https://www.realmadrid.com/img/vertical_380px/cristiano_550x650.jpg"></td>
+            <td class="align-middle">{{ player.name }}</td>
+            <td class="align-middle">{{ player.team }}</td>
+            <td class="align-middle">{{ player.position }}</td>
+            <td class="align-middle"><a href="/update"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
+            <td class="align-middle"><a href="#"><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></a></td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+    {% else %}
+        <p>No players available.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

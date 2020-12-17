@@ -3,30 +3,25 @@
 {% block content %}
 <div class="row justify-content-md-center">
     <div class="col-sm-6 text-center">
-        <h3 class="h3">Create Player</h3>
+        <h3 class="h3">Update Player</h3>
     </div>
 </div>
 <div class="row justify-content-md-center">
     <div class="col-sm-6">
-        <form method="POST" action="/create"> {% csrf_token %}
+        <form>
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Player name">
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Players's name">
             </div>
             <br>
             <div class="form-group">
                 <label for="team">Team</label>
-                <input type="text" class="form-control" id="team" placeholder="Player team">
+                <input type="text" class="form-control" id="team" placeholder="Players's team">
             </div>
             <br>
             <div class="form-group">
                 <label for="position">Position</label>
-                <input type="text" class="form-control" id="position" placeholder="Player position">
-            </div>
-            <br>
-            <div class="form-group">
-                <label for="position">Picture URL</label>
-                <input type="text" class="form-control" id="picture" placeholder="Player picture url">
+                <input type="text" class="form-control" id="position" placeholder="Players's position">
             </div>
             <br>
             <div class="form-group">
