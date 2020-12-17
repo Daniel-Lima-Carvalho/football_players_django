@@ -4,7 +4,7 @@ from django.template import loader
 
 def index(request):
     context = {
-        'players': [{'name': 'Daniel','team': 'Flamengo'},{'name': 'Daniel 2','team': 'Flamengo'}]
+        'players': [{'name': 'Daniel','team': 'Flamengo','position': 'Midfielder'},{'name': 'Daniel 2','team': 'Flamengo','position': 'Midfielder'}]
     }
     return render(request, 'players/index.html', context)
 

@@ -1,20 +1,38 @@
 {% extends 'players/base.html' %}
-
+{% load static %}
 {% block content %}
+<div class="row justify-content-md-center">
+  <div class="col-sm-6 text-center">
+      <h3 class="h3">Players List</h3>
+  </div>
+</div>
+<br>
 <div class="row justify-content-sm-center">
   <div class="col-sm">
     {% if players %}
-    <table class="players-table table table-dark table-striped">
+    <table class="table table-sm">
+      <thead class="thead-dark">
         <tr>
-            <th>Name</th>
-            <th>Team</th>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Team</th>
+            <th scope="col">Position</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
         </tr>
+      </thead>
+      <tbody>
         {% for player in players%}
         <tr>
             <td>{{ player.name }}</td>
             <td>{{ player.team }}</td>
+            <td>{{ player.position }}</td>
+            <td><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></td>
+            <td><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></td>
         </tr>
         {%endfor%}
+      </tbody>
     </table>
     {% else %}
         <p>No players available.</p>
