@@ -4,10 +4,14 @@ from django.template import loader
 from players.models import Player
 from django.shortcuts import redirect
 from players.helpers import save_player
+from django.core.paginator import Paginator
 
 def index(request):
+    players = Player.objects.all()
+    paginator = Paginator(players, 3)
     context = {
-        'players': Player.objects.all()
+        'players': players,
+        'paginator': paginator
     }
     return render(request, 'players/index.html', context)
 
