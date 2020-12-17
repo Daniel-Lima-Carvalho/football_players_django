@@ -10,3 +10,6 @@ def index(request):
 
 def create(request):
     return render(request, 'players/create.html')
+
+def update(request):
+    return render(request, 'players/update.html')

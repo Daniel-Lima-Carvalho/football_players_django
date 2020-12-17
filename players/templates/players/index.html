@@ -28,8 +28,8 @@
             <td>{{ player.name }}</td>
             <td>{{ player.team }}</td>
             <td>{{ player.position }}</td>
-            <td><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></td>
-            <td><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></td>
+            <td><a href="/update"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
+            <td><a href="#"><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></a></td>
         </tr>
         {%endfor%}
       </tbody>
