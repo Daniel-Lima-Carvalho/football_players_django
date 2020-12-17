@@ -30,7 +30,7 @@
             <td class="align-middle">{{ player.name }}</td>
             <td class="align-middle">{{ player.team }}</td>
             <td class="align-middle">{{ player.position }}</td>
-            <td class="align-middle"><a href="/update"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
+            <td class="align-middle"><a href="/update/{{player.id}}"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
             <td class="align-middle"><a href="/delete/{{player.id}}"><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></a></td>
         </tr>
         {% endfor %}

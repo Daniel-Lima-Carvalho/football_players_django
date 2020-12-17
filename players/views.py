@@ -21,8 +21,18 @@ def create(request):
         return render(request, 'players/create.html')
     return render(request, 'players/create.html')
 
-def update(request):
-    return render(request, 'players/update.html')
+def update(request, id):
+    player = Player.objects.get(pk=id)
+    if request.POST.get('method') == 'PUT':
+        player.name = request.POST.get('name')
+        player.team = request.POST.get('team')
+        player.position = request.POST.get('position')
+        player.picture = request.POST.get('picture')
+        player.save()
+    context = {
+        'player': player
+    }
+    return render(request, 'players/update.html', context)
 
 def delete(request, id):
     player = Player.objects.get(pk=id)
