@@ -3,9 +3,11 @@
 }
 
 .player-picture{
-    width: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 70px;
     height: 70px;
-    border-radius: 50px;
 }
 
 .btn-block{
