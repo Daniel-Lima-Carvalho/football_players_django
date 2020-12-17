@@ -24,7 +24,7 @@
         </tr>
       </thead>
       <tbody>
-        {% for player in players %}
+        {% for player in actual_player_list %}
         <tr>
             <td><img class="player-picture" src="{{ player.picture }}"></td>
             <td class="align-middle">{{ player.name }}</td>
@@ -45,19 +45,20 @@
   <div class="col-sm-6">
       <nav aria-label="page navition">
           <ul class="pagination  justify-content-center">
+            {% if previous_page %}
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
+              <a class="page-link" href="/{{previous_page}}" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            {% endif %}
+            {% if next_page %}
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
+              <a class="page-link" href="/{{next_page}}" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
+            {% endif %}
           </ul>
         </nav>
   </div>

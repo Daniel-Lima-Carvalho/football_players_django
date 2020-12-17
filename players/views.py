@@ -6,12 +6,20 @@ from django.shortcuts import redirect
 from players.helpers import save_player
 from django.core.paginator import Paginator
 
-def index(request):
+def index(request, page_number=1):
     players = Player.objects.all()
-    paginator = Paginator(players, 3)
+    paginator = Paginator(players, 4)
+    actual_page = paginator.page(page_number)
+    actual_player_list = actual_page.object_list
+    next_page = actual_page.next_page_number() if actual_page.has_next() else None
+    previous_page = actual_page.previous_page_number() if actual_page.has_previous() else None
+
     context = {
         'players': players,
-        'paginator': paginator
+        'paginator': paginator,
+        'actual_player_list': actual_player_list,
+        'next_page': next_page,
+        'previous_page': previous_page
     }
     return render(request, 'players/index.html', context)
 
