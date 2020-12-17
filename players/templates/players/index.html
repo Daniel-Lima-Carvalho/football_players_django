@@ -26,12 +26,12 @@
       <tbody>
         {% for player in players%}
         <tr>
-            <td><img class='player-picture' src="https://i0.statig.com.br/bancodeimagens/4i/8y/m4/4i8ym40qx4tf1gk5vauovonbg.jpg"></td>
-            <td>{{ player.name }}</td>
-            <td>{{ player.team }}</td>
-            <td>{{ player.position }}</td>
-            <td><a href="/update"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
-            <td><a href="#"><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></a></td>
+            <td><img class="player-picture" src="https://i0.statig.com.br/bancodeimagens/4i/8y/m4/4i8ym40qx4tf1gk5vauovonbg.jpg"></td>
+            <td class="align-middle">{{ player.name }}</td>
+            <td class="align-middle">{{ player.team }}</td>
+            <td class="align-middle">{{ player.position }}</td>
+            <td class="align-middle"><a href="/update"><img src="{% static 'players/images/update.png' %}" style="width: 20px;"></a></td>
+            <td class="align-middle"><a href="#"><img src="{% static 'players/images/delete.png' %}" style="width: 20px;"></a></td>
         </tr>
         {%endfor%}
       </tbody>
