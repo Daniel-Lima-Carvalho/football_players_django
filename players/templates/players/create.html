@@ -11,22 +11,22 @@
         <form method="POST" action="/create"> {% csrf_token %}
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Player name">
+                <input type="text" class="form-control" id="name" name='name' aria-describedby="name" placeholder="Player name">
             </div>
             <br>
             <div class="form-group">
                 <label for="team">Team</label>
-                <input type="text" class="form-control" id="team" placeholder="Player team">
+                <input type="text" class="form-control" id="team" name='team' placeholder="Player team">
             </div>
             <br>
             <div class="form-group">
                 <label for="position">Position</label>
-                <input type="text" class="form-control" id="position" placeholder="Player position">
+                <input type="text" class="form-control" id="position" name='position' placeholder="Player position">
             </div>
             <br>
             <div class="form-group">
                 <label for="position">Picture URL</label>
-                <input type="text" class="form-control" id="picture" placeholder="Player picture url">
+                <input type="text" class="form-control" id="picture" name='picture' placeholder="Player picture url">
             </div>
             <br>
             <div class="form-group">
