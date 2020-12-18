@@ -13,3 +13,13 @@
 .btn-block{
     width: 100%;
 }
+
+.page-link {
+    color: white;
+    background-color: 198754;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: 198754;
+}
