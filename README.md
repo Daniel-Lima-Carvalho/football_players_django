@@ -1,29 +1,32 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
+# Football Players CRUD Django #
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* A football player CRUD system made with Django.
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Pull the project to your local machine
+* Create a secret key
+* Create a .env file in project root folder with the contents below. This .env file have secret credentials we don't need to share in Github.
 
-### Contribution guidelines ###
+    DEBUG=False
+    SECRET_KEY=YOUR GENERATE KEY
+    DATABASE_USER=YOUR POSTGRES DATABASE USER
+    DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
+    DATABASE_HOST=YOUR POSTGRES DATABASE HOST
+    DATABASE_PORT=YOUR POSTGRES DATABASE PORT
 
-* Writing tests
-* Code review
-* Other guidelines
+* Criate a virtual env to the project.
+* Excute the migrations
+
+    1 - python manage.py migrate
+
+* Run the project
+
+    1 - python manage.py runserver
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* Repo owner: Daniel Lima
+* Email: daniellima2297@gmail.com
