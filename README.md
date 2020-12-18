@@ -20,7 +20,7 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 - Criate a virtual environment folder in the project root folder and activate the environment.
 
-        python -m venv venv<
+        python -m venv venv
     
         venv\Scripts\activate
     
