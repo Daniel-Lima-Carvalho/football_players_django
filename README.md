@@ -1,6 +1,6 @@
 # Football Players CRUD Django #
 
-A football player CRUD system made with Django.
+A football player CRUD system made with Django, Bootstrap in frontend and PostgreSQL database.
 
 ### How do I get set up? ###
 
@@ -11,16 +11,16 @@ A football player CRUD system made with Django.
     
 - Create a .env file in project root folder with the contents below. This .env file have secret credentials we don't need to share in Github.
 
-        DEBUG=True<br/>
-        SECRET_KEY=YOUR GENERATED KEY<br/>
-        DATABASE_USER=YOUR POSTGRES DATABASE USER<br/>
-        DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD<br/>
-        DATABASE_HOST=YOUR POSTGRES DATABASE HOST<br/>
-        DATABASE_PORT=YOUR POSTGRES DATABASE PORT<br/>
+        DEBUG=True
+        SECRET_KEY=YOUR GENERATED KEY
+        DATABASE_USER=YOUR POSTGRES DATABASE USER
+        DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
+        DATABASE_HOST=YOUR POSTGRES DATABASE HOST
+        DATABASE_PORT=YOUR POSTGRES DATABASE PORT
 
 - Criate a virtual environment folder in the project root folder and activate the environment.
 
-        python -m venv venv</br>
+        python -m venv venv<
     
         venv\Scripts\activate
     
