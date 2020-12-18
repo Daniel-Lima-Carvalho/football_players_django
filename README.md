@@ -20,20 +20,21 @@ A football player CRUD system made with Django.
 
 - Criate a virtual environment folder in the project root folder and activate the environment.
 
-    1 - python -m venv venv
-    2 - venv\Scripts\activate
+&nbsp;&nbsp;&nbsp;&nbsp; python -m venv venv</br>
+    
+&nbsp;&nbsp;&nbsp;&nbsp; venv\Scripts\activate
     
 - Intall project python dependencies from requirements.txt
 
-    pip install -r requirements.txt
+ &nbsp;&nbsp;&nbsp;&nbsp; pip install -r requirements.txt
     
 - Excute project migrations
 
-    python manage.py migrate
+&nbsp;&nbsp;&nbsp;&nbsp; python manage.py migrate
 
 - Run the project
 
-    python manage.py runserver
+&nbsp;&nbsp;&nbsp;&nbsp; python manage.py runserver
 
 ### Who do I talk to? ###
 
