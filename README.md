@@ -14,6 +14,7 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
         DEBUG=True
         SECRET_KEY=YOUR GENERATED KEY
+        DATABASE_NAME=YOUR POSTGRES DATABASE NAME
         DATABASE_USER=YOUR POSTGRES DATABASE USER
         DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
         DATABASE_HOST=YOUR POSTGRES DATABASE HOST
@@ -45,11 +46,11 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
         DEBUG=True
         SECRET_KEY=YOUR GENERATED KEY
-        DATABASE_NAME=players
-        DATABASE_USER=postgres
-        DATABASE_PASSWORD=postgres
-        DATABASE_HOST=postgres_database
-        DATABASE_PORT=5432
+        DATABASE_NAME=YOUR POSTGRES DATABASE NAME
+        DATABASE_USER=YOUR POSTGRES DATABASE USER
+        DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
+        DATABASE_HOST=**postgres_database**
+        DATABASE_PORT=**5432**
         
  3 - In the project root folder execute the following command.
         
