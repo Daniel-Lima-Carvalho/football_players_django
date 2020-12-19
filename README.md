@@ -45,13 +45,13 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 2 - Create a .env file in project root folder with the contents below. This .env file have secret credentials we don't need to share in Github.
         
 <pre>
-  DEBUG=True
-  SECRET_KEY=YOUR GENERATED KEY
-  DATABASE_NAME=YOUR POSTGRES DATABASE NAME
-  DATABASE_USER=YOUR POSTGRES DATABASE USER
-  DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
-  DATABASE_HOST=<b>postgres_database</b>
-  DATABASE_PORT=<b>5432</b>
+    DEBUG=True
+    SECRET_KEY=YOUR GENERATED KEY
+    DATABASE_NAME=YOUR POSTGRES DATABASE NAME
+    DATABASE_USER=YOUR POSTGRES DATABASE USER
+    DATABASE_PASSWORD=YOUR POSTGRES DATABASE PASSWORD
+    DATABASE_HOST=<b>postgres_database</b>
+    DATABASE_PORT=<b>5432</b>
 </pre>
         
  3 - In the project root folder execute the following command.
