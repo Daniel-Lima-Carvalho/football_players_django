@@ -16,6 +16,8 @@ services:
       - "8000:8000"
     depends_on:
       - postgres_database
+    volumes:
+      - ./:/root/football_players_django
     restart: always
     stdin_open: true # docker run -i
     tty: true # docker run -t
