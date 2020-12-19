@@ -23,3 +23,7 @@
     color: white;
     background-color: 198754;
 }
+
+.nav-link {
+    color: black !important;
+}
