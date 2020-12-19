@@ -39,3 +39,7 @@ body{
 .navbar-light .navbar-brand {
     color: white;
 }
+
+.img-player{
+    width: 150px;
+}
