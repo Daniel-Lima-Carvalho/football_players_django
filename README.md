@@ -58,6 +58,14 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
         
         docker-compose up
 
+### Project Images ###
+
+![Players List Page](static\players\images\project\project-1.png)
+
+![Create Player Page](static\players\images\project\project-2.png)
+
+![Update Player Page](static\players\images\project\project-3.png)
+
 ### Who do I talk to? ###
 
 * Repo owner: Daniel Lima
