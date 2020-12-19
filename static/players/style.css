@@ -1,3 +1,7 @@
+body{
+    background-color: #f1fff9;
+}
+
 .players-table{
     width: 100%;
 }
@@ -25,5 +29,13 @@
 }
 
 .nav-link {
-    color: black !important;
+    color: white !important;
+}
+
+.btn-right{
+    float: right;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
 }
