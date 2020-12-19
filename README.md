@@ -19,7 +19,7 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
         DATABASE_HOST=YOUR POSTGRES DATABASE HOST
         DATABASE_PORT=YOUR POSTGRES DATABASE PORT
 
-4 - Criate a virtual environment folder in the project root folder and activate the environment.
+4 - Create a virtual environment folder in the project root folder and activate the environment.
 
         python -m venv venv
     
