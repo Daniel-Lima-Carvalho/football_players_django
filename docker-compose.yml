@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  postgres_database:
+      container_name: postgres_database
+      environment:              
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=postgres
+          - POSTGRES_DB=players
+          - PGDATA=/var/lib/postgresql/data/pgdata
+      image: postgres:9.6
+  football_players_server:
+    container_name: football_players_server
+    build: .
+    command: bash -c "python manage.py migrate; python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_database
+    restart: always
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
