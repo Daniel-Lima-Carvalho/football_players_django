@@ -1,3 +1,7 @@
+body{
+    background-color: #f1fff9;
+}
+
 .players-table{
     width: 100%;
 }
@@ -22,4 +26,20 @@
 .page-link:hover {
     color: white;
     background-color: 198754;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn-right{
+    float: right;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.img-player{
+    width: 150px;
 }

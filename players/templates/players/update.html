@@ -3,9 +3,10 @@
 {% block content %}
 <div class="row justify-content-md-center">
     <div class="col-sm-6 text-center">
-        <h3 class="h3">Update Player</h3>
+        <h4 class="h4">Update Player</h4>
     </div>
 </div>
+<br>
 <div class="row justify-content-md-center">
     <div class="col-sm-6">
         <form method="POST" action="/update/{{player.id}}"> {% csrf_token %}
