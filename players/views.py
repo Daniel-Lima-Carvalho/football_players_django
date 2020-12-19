@@ -5,7 +5,10 @@ from players.models import Player
 from django.shortcuts import redirect
 from players.helpers import save_player
 from django.core.paginator import Paginator
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 
+@login_required(login_url='/adminlogin')
 def index(request, page_number=1):
     players = Player.objects.all()
     paginator = Paginator(players, 4)
@@ -23,12 +26,14 @@ def index(request, page_number=1):
     }
     return render(request, 'players/index.html', context)
 
+@login_required(login_url='/adminlogin')
 def create(request):
     if request.method == 'POST':
         player = Player()
         player = save_player(request, player)
     return render(request, 'players/create.html')
 
+@login_required(login_url='/adminlogin')
 def update(request, id):
     player = Player.objects.get(pk=id)
 
@@ -38,7 +43,13 @@ def update(request, id):
     context = { 'player': player }
     return render(request, 'players/update.html', context)
 
+@login_required(login_url='/adminlogin')
 def delete(request, id):
     player = Player.objects.get(pk=id)
     player.delete()
+    return redirect('index')
+    
+@login_required(login_url='/adminlogin')
+def logout_from_system(request):
+    logout(request)
     return redirect('index')
