@@ -34,7 +34,11 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
         python manage.py migrate
 
-7 - Run the project
+7 - Create a superuser
+
+        python manage.py createsuperuser
+        
+8 - Run the project
 
         python manage.py runserver
         
