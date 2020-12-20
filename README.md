@@ -10,7 +10,7 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
         python -c "import secrets; print(secrets.token_urlsafe())"
     
-3 - Create a .env file in project root folder with the contents below. This .env file have secret credentials we don't need to share in Github.
+3 - Create a .env file in project root folder with your credentials
 
         DEBUG=True
         SECRET_KEY=YOUR GENERATED KEY
@@ -46,7 +46,7 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 1 - Repeat steps 1 and 2 from the previous setup guide.</br>
 
-2 - Create a .env file in project root folder with the contents below. This .env file have secret credentials we don't need to share in Github.
+2 - Create a .env file in project root folder with your credentials
         
 <pre>
     DEBUG=True
@@ -61,6 +61,12 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
  3 - In the project root folder execute the following command.
         
         docker-compose up
+        
+ 4 - Create a superuser
+ 
+        docker exec -it football_players_server bash
+        
+        python manage.py createsuperuser
 
 ### Project Images ###
 
