@@ -8,11 +8,11 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 2 - Create a secret key with the following command.
         
-        Windows
+   Windows
         
         python -c "import secrets; print(secrets.token_urlsafe())"
     
-        Linux
+   Linux
         
         python3 -c "import secrets; print(secrets.token_urlsafe())"
         
