@@ -74,11 +74,6 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 ![Create Player Page](https://raw.githubusercontent.com/Daniel-Lima-Carvalho/football_players_django/develop/static/players/images/project/project-2.png)
 
-### Project Images ###
-
-![Players List Page](https://raw.githubusercontent.com/Daniel-Lima-Carvalho/football_players_django/develop/static/players/images/project/project-1.png)
-
-![Create Player Page](https://raw.githubusercontent.com/Daniel-Lima-Carvalho/football_players_django/develop/static/players/images/project/project-2.png)
 
 ### Who do I talk to? ###
 
