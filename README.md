@@ -7,9 +7,15 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 1 - Pull the project to your local machine and open the terminal in the project root folder.</br>
 
 2 - Create a secret key with the following command.
-
+        
+        Windows
+        
         python -c "import secrets; print(secrets.token_urlsafe())"
     
+        Linux
+        
+        python3 -c "import secrets; print(secrets.token_urlsafe())"
+        
 3 - Create a .env file in project root folder with your credentials
 
         DEBUG=True
