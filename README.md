@@ -8,11 +8,11 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 2 - Create a secret key with the following command.
         
-   Windows
+Windows
         
         python -c "import secrets; print(secrets.token_urlsafe())"
     
-   Linux
+Linux
         
         python3 -c "import secrets; print(secrets.token_urlsafe())"
         
@@ -28,25 +28,58 @@ A football player CRUD system made with Django, Bootstrap in frontend and Postgr
 
 4 - Create a virtual environment folder in the project root folder and activate the environment.
 
+Linux
+        
+        apt-get install python3-venv
+        
+        python3 -m venv venv
+        
+        source venv/bin/activate
+
+Windows
+
         python -m venv venv
     
         venv\Scripts\activate
     
 5 - Intall project python dependencies from requirements.txt
 
+Linux
+        
+        pip3 install -r requirements.txt
+
+Windows
+
         pip install -r requirements.txt
     
 6 - Excute project migrations
+Linux
 
+        python3 manage.py migrate
+
+Windows 
+        
         python manage.py migrate
 
 7 - Create a superuser
+
+Linux
+
+        python3 manage.py createsuperuser
+
+Windows       
 
         python manage.py createsuperuser
         
 8 - Run the project
 
-        python manage.py runserver
+Linux
+        
+        python3 manage.py runserver 0.0.0.0:8000
+  
+Windows
+     
+        python manage.py runserver 0.0.0.0:8000
         
 ### How to set up with Docker? ###
 
