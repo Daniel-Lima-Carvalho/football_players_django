@@ -86,7 +86,7 @@ Windows
 
 1 - Repeat steps 1 and 2 from the previous setup guide.</br>
 
-2 - Create a .env file in project root folder with your credentials
+2 - Create a .env file in the project root with your credentials.
         
 <pre>
     DEBUG=True
