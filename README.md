@@ -42,7 +42,7 @@ Windows
     
         venv\Scripts\activate
     
-5 - Intall project python dependencies from requirements.txt.
+5 - Intall python dependencies from requirements.txt.
 
 Linux
         
@@ -52,7 +52,7 @@ Windows
 
         pip install -r requirements.txt
     
-6 - Excute project migrations.
+6 - Excute migrations.
 
 Linux
 
