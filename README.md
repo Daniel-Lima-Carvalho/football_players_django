@@ -16,7 +16,7 @@ Linux
         
         python3 -c "import secrets; print(secrets.token_urlsafe())"
         
-3 - Create a .env file in project root folder with your credentials
+3 - Create a .env file in the project root with your credentials.
 
         DEBUG=True
         SECRET_KEY=YOUR GENERATED KEY
@@ -26,7 +26,7 @@ Linux
         DATABASE_HOST=YOUR POSTGRES DATABASE HOST
         DATABASE_PORT=YOUR POSTGRES DATABASE PORT
 
-4 - Create a virtual environment folder in the project root folder and activate the environment.
+4 - Create a virtual environment in the project root and activate it.
 
 Linux
         
@@ -42,7 +42,7 @@ Windows
     
         venv\Scripts\activate
     
-5 - Intall project python dependencies from requirements.txt
+5 - Intall project python dependencies from requirements.txt.
 
 Linux
         
@@ -52,7 +52,8 @@ Windows
 
         pip install -r requirements.txt
     
-6 - Excute project migrations
+6 - Excute project migrations.
+
 Linux
 
         python3 manage.py migrate
@@ -61,7 +62,7 @@ Windows
         
         python manage.py migrate
 
-7 - Create a superuser
+7 - Create a superuser.
 
 Linux
 
@@ -71,7 +72,7 @@ Windows
 
         python manage.py createsuperuser
         
-8 - Run the project
+8 - Run the project.
 
 Linux
         
